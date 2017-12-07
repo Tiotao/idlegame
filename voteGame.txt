@@ -23,7 +23,7 @@ Buttons
 		on click:anim icon wobble
 		on click:yield 1 vote
 		on click:if (have celeb and chance(1%)) yield 1 opinionVote
-		icon:http://clipart-library.com/img1/862953.png
+		icon:https://raw.githubusercontent.com/Tiotao/idlegame/master/imgs/votes.png
 		no text
 		class:bigButton hasFlares
 		icon class:shadowed
