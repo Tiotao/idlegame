@@ -99,7 +99,7 @@ Buildings
 	*newspaper|newspapers
 		name:Press|Presses
 		desc:A media press that tells good things about you.<//><b>Effect:</b><.>Produces 12 votes per second.
-		icon:icons[3,3]
+		icon:icons[3,4]
 		cost:4000 votes
 		on tick:yield 12 votes
 		req:4000 votes:earned
@@ -107,7 +107,7 @@ Buildings
 	*corporation|corporations
 		name:Corporation|Corporations
 		desc:A profiting corporation that help you raise your campaign fund.<//><b>Effect:</b><.>Produces 90 votes per second.
-		icon:icons[3,4]
+		icon:icons[3,5]
 		cost:20000 votes
 		on tick:yield 90 votes
 		req:20000 votes:earned
@@ -115,7 +115,7 @@ Buildings
 	*cabinet|cabinets
 		name:Cabinet member|Cabinet members
 		desc:Lobby a cabinet member so that your bill gets passed easily<//><b>Effect:</b><.>Produces 300 votes per second.
-		icon:icons[3,5]
+		icon:icons[3,6]
 		cost:200000 votes, 1 opinionVote
 		on tick:yield 300 votes
 		req:200000 votes:earned and elected
@@ -123,7 +123,7 @@ Buildings
 	*wall|walls
 		name:Great Fire Wall|Great Fire Walls
 		desc:People should only see things that you want them to see over the Internet.<//><b>Effect:</b><.>Produces 1000 votes per second.
-		icon:icons[3,6]
+		icon:icons[3,7]
 		cost:3000000 votes, 4 opinionVotes
 		on tick:yield 1000 votes
 		req:3000000 votes:earned and elected
@@ -131,7 +131,7 @@ Buildings
 	*miniture|minitures
 		name:Miniture|Minitures
 		desc:War is Peace. Freedom is Slavery. Ignorance is strength.<//><b>Effect:</b><.>Produces 4000 votes per second.
-		icon:icons[3,7]
+		icon:icons[3,8]
 		cost:70000000 votes, 16 opinionVotes
 		on tick:yield 4000 votes
 		on tick:if (have long) yield 0.01 opinionVote
@@ -141,7 +141,7 @@ Buildings
 		name:Dissident's Camp
 		text:Freedom camp ([this]%)
 		desc:A place where dissidents spent the rest of their life.<//><b>The camp is [this]% complete.</b>
-		icon:icons[3,8]
+		icon:icons[3,3]
 		cost:300000000 votes, 100 opinionVotes
 		req:70000000 votes:earned and elected
 		limit:100
