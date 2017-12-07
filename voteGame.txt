@@ -10,7 +10,7 @@ Settings
 	background:stuff/corporation.jpg
 	building cost increase:115%
 	building cost refund:50%
-	spritesheet:icons, 48 by 48, stuff/bunnyIcons.png
+	spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/Tiotao/idlegame/master/imgs/votes_icon.png
 	stylesheet:stuff/bigBlue.css
 
 Layout
@@ -39,7 +39,7 @@ Resources
 		show earned
 		
 	*opinionVote|opinionVotes
-		name:Opinion newspaper Vote|Opinion newspaper Votes
+		name:Opinion Leader Vote|Opinion Leader Votes
 		desc:These shiny carrots are terribly rare, terribly precious and terribly delicious!
 		icon:icons[0,1]
 		class:noBackground
@@ -154,32 +154,32 @@ Upgrades
 	//food upgrades
 	//inspiration : http://vote.org/suggested-vegetables-and-fruits-for-a-vote-diet/
 	
-	*parsley
-		name:Parsley
+	*educated
+		name:Ivy League Degree
 		desc:A nice little supplement to your votes' diet.<//><b>Effect:</b><.>+1 vote/click
 		icon:icons[1,1]
 		cost:100 votes
 		passive:increase vote yield of voteButton by 1
 		req:10 votes:earned
 		
-	*spinach
-		name:Spinach
+	*hair
+		name:Stylish Hair
 		desc:Big tasty leaves, perfect for hungry votes.<//><b>Effect:</b><.>+1 vote/click
 		icon:icons[1,2]
 		cost:200 votes
 		passive:increase vote yield of voteButton by 1
 		req:50 votes:earned
 		
-	*lettuce
-		name:Lettuce
+	*family
+		name:Family Man
 		desc:Frilly greens loved by all votes.<//><b>Effect:</b><.>+1 vote/click
 		icon:icons[1,3]
 		cost:400 votes
 		passive:increase vote yield of voteButton by 1
 		req:200 votes:earned
 		
-	*broccoli
-		name:Broccoli
+	*talent
+		name:Artistic Talent
 		desc:Crunchy greens that look like little trees.<//><b>Effect:</b><.>votes/click x2<.>vote production +5%
 		icon:icons[1,4]
 		cost:3000 votes
@@ -187,8 +187,8 @@ Upgrades
 		passive:multiply yield of votes by 1.05
 		req:1000 votes:earned
 		
-	*apple
-		name:Apple
+	*fashion
+		name:Fashion Clothing
 		desc:Nice pieces of juicy red apples.<//><b>Effect:</b><.>votes/click x1.5<.>vote production +5%
 		icon:icons[1,5]
 		cost:10000 votes
@@ -196,8 +196,8 @@ Upgrades
 		passive:multiply yield of votes by 1.05
 		req:1000 votes:earned
 		
-	*radish
-		name:Radish
+	*minority
+		name:Minority
 		desc:Purple, crunchy, and strangely spicy.<//><b>Effect:</b><.>votes/click x1.5<.>vote production +5%
 		icon:icons[1,6]
 		cost:50000 votes
@@ -205,8 +205,8 @@ Upgrades
 		passive:multiply yield of votes by 1.05
 		req:10000 votes:earned
 		
-	*mint
-		name:Mint
+	*plastic
+		name:Plastic Surgery
 		desc:Tasty, and gives your votes a lovely breath.<//><b>Effect:</b><.>votes/click x1.5<.>vote production +5%
 		icon:icons[1,7]
 		cost:100000 votes
@@ -214,8 +214,8 @@ Upgrades
 		passive:multiply yield of votes by 1.05
 		req:50000 votes:earned
 		
-	*chard
-		name:Chard
+	*toastmaster
+		name:Toastmaster
 		desc:Broad leaves that make for a tasty salad.<//><b>Effect:</b><.>votes/click x1.5<.>vote production +5%
 		icon:icons[1,8]
 		cost:500000 votes
@@ -223,8 +223,8 @@ Upgrades
 		passive:multiply yield of votes by 1.05
 		req:100000 votes:earned
 		
-	*cherry
-		name:Cherry
+	*biography
+		name:Biography
 		desc:Your votes look like little vampires when they start munching on these!<//><b>Effect:</b><.>votes/click x1.5<.>vote production +5%
 		icon:icons[1,9]
 		cost:1000000 votes
@@ -232,8 +232,8 @@ Upgrades
 		passive:multiply yield of votes by 1.05
 		req:500000 votes:earned
 		
-	*carrot
-		name:Carrot
+	*statue
+		name:Statue
 		desc:The quintessential vote food! Crunchy, orange, and perfect.<//><b>Effect:</b><.>votes/click x2<.>vote production +10%
 		icon:icons[1,0]
 		cost:100000000 votes
@@ -334,22 +334,22 @@ Upgrades
 		cost:5 opinionVotes
 		req:1 opinionVote:earned
 	
-	*elected
-		name:President-Elect
+	*sexual
+		name:Scandal
 		desc:Your votes are making their first step towards declaring their indenewspaperdence from the oppressive shackles of newspapers and printers.<//><b>Effect:</b><.>unlocks new buildings
 		icon:icons[2,7]
 		cost:10 opinionVotes
 		req:5 opinionVotes:earned
 		
-	*sexual
-		name:Scandal
+	*elected
+		name:President-Elect
 		desc:A delicious herb that tastes lucky.<//><b>Effect:</b><.>lucky vote effects are 4 times more powerful
 		icon:icons[2,8]
 		cost:100 opinionVotes
 		req:50 opinionVotes:earned
 		
-	*moonGardens
-		name:Moon gardens
+	*long
+		name:Long live
 		desc:The royal botanists in your moon minitures have found new ways of cultivating plants in reduced gravity!<//><b>Effect:</b><.>moon minitures now produce 1 golden carrot every 100 seconds
 		icon:icons[2,9]
 		cost:100 opinionVotes
@@ -358,74 +358,4 @@ Upgrades
 Achievements
 	*TEMPLATE
 		on click:anim glow
-		
-	*voteAchiev1
-		name:Run vote run
-		desc:Have <b>1</b> vote.
-		req:1 vote
-		icon:icons[2,4] icons[0,2] icons[0,6]
-	*voteAchiev2
-		name:votest home videos
-		desc:Have <b>1000</b> votes.
-		req:1000 votes
-		icon:icons[2,4] icons[0,3] icons[0,6]
-	*voteAchiev3
-		name:You got buns, hun
-		desc:Have <b>1000000</b> votes.
-		req:10000000 votes
-		icon:icons[2,4] icons[0,4] icons[0,6]
-		
-	*clickAchiev1
-		name:That tickles
-		desc:Click the vote <b>10</b> times.
-		req:10 voteButton clicks
-		icon:icons[2,2] icons[0,2] icons[0,6]
-	*clickAchiev2
-		name:Don't squeeze me I'll fart
-		desc:Click the vote <b>100</b> times.
-		req:100 voteButton clicks
-		icon:icons[2,2] icons[0,3] icons[0,6]
-	*clickAchiev3
-		name:You're cruising for a bruising, dude
-		desc:Click the vote <b>2000</b> times.
-		req:2000 voteButton clicks
-		icon:icons[2,2] icons[0,4] icons[0,6]
-		
-	*votePsAchiev1
-		name:Be vewy vewy quiet
-		desc:Produce <b>10</b> votes per second.
-		req:10 votes per second
-		icon:icons[2,3] icons[0,2] icons[0,6]
-	*votePsAchiev2
-		name:Hop and a skip
-		desc:Produce <b>1000</b> votes per second.
-		req:1000 votes per second
-		icon:icons[2,3] icons[0,3] icons[0,6]
-	*votePsAchiev3
-		name:Go forth and multiply
-		desc:Produce <b>100000</b> votes per second.
-		req:100000 votes per second
-		icon:icons[2,3] icons[0,4] icons[0,6]
-		
-	*carrotAchiev1
-		name:Isn't it neat
-		desc:Have <b>1</b> golden carrot.
-		req:1 opinionVote
-		icon:icons[0,1] icons[0,2]
-	*carrotAchiev2
-		name:All that glitters
-		desc:Have <b>100</b> golden carrots.
-		req:100 opinionVote
-		icon:icons[0,1] icons[0,3]
-	*carrotAchiev3
-		name:Zero nutritional value
-		desc:Have <b>1000</b> golden carrots.
-		req:1000 opinionVote
-		icon:icons[0,1] icons[0,4]
-	
-	*campAchiev
-		name:Freedom!
-		desc:Complete building the <b>freedom camp</b>.<//>This is it. You beat the game!
-		req:100 camp
-		icon:icons[3,8] icons[0,4]
 		
