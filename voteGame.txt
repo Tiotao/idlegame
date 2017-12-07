@@ -134,7 +134,7 @@ Buildings
 		icon:icons[3,7]
 		cost:70000000 votes, 16 opinionVotes
 		on tick:yield 4000 votes
-		on tick:if (have moonGardens) yield 0.01 opinionVote
+		on tick:if (have long) yield 0.01 opinionVote
 		req:70000000 votes:earned and elected
 		
 	*camp
